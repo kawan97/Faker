@@ -1,19 +1,42 @@
 {
-    "name": "kawan/faker",
-    "description": "Faker is a PHP library that generates fake data for you",
+    "name": "fzaninotto/faker",
     "type": "library",
+    "description": "Faker is a PHP library that generates fake data for you.",
+    "keywords": [
+        "faker",
+        "fixtures",
+        "data"
+    ],
     "license": "MIT",
-    "autoload": {
-        "psr-4": {
-            "Kawan\\Faker\\": "src/"
-        }
-    },
     "authors": [
         {
-            "name": "kawan97",
-            "email": "pshtiwankawan@gmail.com"
+            "name": "François Zaninotto"
         }
     ],
-    "minimum-stability": "stable",
-    "require": {}
+    "require": {
+        "php": "^5.3.3 || ^7.0 || ^8.0"
+    },
+    "require-dev": {
+        "ext-intl": "*",
+        "phpunit/phpunit": "^4.8.35 || ^5.7",
+        "squizlabs/php_codesniffer": "^2.9.2"
+    },
+    "autoload": {
+        "psr-4": {
+            "Faker\\": "src/Faker/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Faker\\Test\\": "test/Faker/"
+        }
+    },
+    "extra": {
+        "branch-alias": {
+            "dev-master": "1.9-dev"
+        }
+    },
+    "config": {
+        "sort-packages": true
+    }
 }
